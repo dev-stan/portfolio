@@ -1,0 +1,80 @@
+.profile-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.cta-box {
+  height: auto;
+  width: 100%;
+  background-color: #272427;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 0 50px 1px #000000;
+  transition: all 1s ease;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 50px 4px #000000;
+  }
+}
+
+h1 {
+  font-size: 42px;
+  color: rgb(245, 238, 251);
+}
+
+p {
+  font-size: 18px;
+  color: rgb(131, 130, 132);
+
+}
+
+.res-button {
+  text-align: center;
+  display: block;
+  background-color: #6A4C93;
+  border-radius: 24px;
+  box-shadow: 0 0 24px 2px #1c1c1c;
+  padding: 12px;
+  width: 50%;
+  height: auto;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  transition: all 1s ease;
+
+  &:hover {
+    box-shadow: 0 0 24px 6px #1c1c1c;
+    transform: scale(1.02);
+    background-color: #543d74;
+
+  }
+}
+
+.red-text {
+  color: #ff3f81
+}
+.purple-text {
+  color: #543d74;
+}

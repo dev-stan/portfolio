@@ -1,2 +1,47 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="background"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.globe.min.js"></script>
+<script>
+  VANTA.GLOBE({
+    el: "#background",
+    color: 0x6a4c93,
+    color2: 0xff3f81,
+    backgroundColor: 0x1d1b1d,
+    size: 1.6,
+    speed: 0.2
+  });
+</script>
+<div class="content">
+  <div class="row w-100 h-100">
+    <div class="col-6 d-flex align-items-center justify-content-start h-100">
+      <div class="cta-box">
+        <div class="d-flex">
+          <div class="row">
+            <div class="col-4">
+              <div class="d-flex align-items-end justify-content-end">
+                <%= image_tag 'https://avatars.githubusercontent.com/u/133672174?v=4', alt: "text", class: "profile-pic" %>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="d-flex align-items-center justify-content-center mt-2">
+                <h1>Hello! I'm a <span class="red-text">{</span>full-stack<span class="red-text">}</span> developer...</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-3">
+          Hi, I'm stan! I make web apps with Ruby, Python, JavaScript, CSS,
+          and HTML. My solid foundation in Ruby on Rails lets me create seamless,
+          user-friendly web applications from front to back. My goal is to build
+          responsive and interactive solutions that meet clients' needs and exceed
+          their expectations.
+        </p>
+        <div class="mt-4 d-flex gap-3">
+          <%= link_to 'resume 🚀', '#', class: "res-button"  %>
+          <%= link_to 'projects 🕹️', '#projects', class: "res-button"  %>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 d-flex align-items-center justify-content-center h-100"></div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+
+  .d-flex {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      margin-right: 10px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    .nav {
+      ul {
+      display: flex;
+      justify-content: flex-end; /* Align list items to the right */
+      list-style: none; /* Remove list decoration */
+      li {
+        margin-right: 10px;
+        a {
+        color: #fff;
+        text-decoration: none;
+        }
+      }
+      }
+    }
+    }
+  }
+}
