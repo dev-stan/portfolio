@@ -29,12 +29,12 @@
   background-color: #272427;
   padding: 30px;
   border-radius: 24px;
-  box-shadow: 0 0 50px 1px #000000;
+  //box-shadow: 0 0 50px 1px #000000;
   transition: all 1s ease;
 
   &:hover {
     transform: scale(1.01);
-    box-shadow: 0 0 50px 4px #000000;
+    box-shadow: 0 0 100px 1px #272427;
   }
 }
 
@@ -47,6 +47,11 @@ p {
   font-size: 18px;
   color: rgb(131, 130, 132);
 
+}
+
+.fa {
+  color: white;
+  font-size: 24px;
 }
 
 .res-button {
@@ -67,7 +72,7 @@ p {
   &:hover {
     box-shadow: 0 0 24px 6px #1c1c1c;
     transform: scale(1.02);
-    background-color: #543d74;
+    background-color: #FF3F81;
 
   }
 }

@@ -1,28 +1,29 @@
 <div id="background"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.globe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.trunk.min.js"></script>
 <script>
-  VANTA.GLOBE({
+  VANTA.TRUNK({
     el: "#background",
-    color: 0x6a4c93,
-    color2: 0xff3f81,
-    backgroundColor: 0x1d1b1d,
-    size: 1.6,
-    speed: 0.2
-  });
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00
+  })
 </script>
 <div class="content">
   <div class="row w-100 h-100">
-    <div class="col-md-6 d-flex align-items-center justify-content-start h-100">
+    <div class="col-6 d-flex align-items-center justify-content-start h-100">
       <div class="cta-box">
         <div class="d-flex">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-4">
               <div class="d-flex align-items-end justify-content-end">
                 <%= image_tag 'https://avatars.githubusercontent.com/u/133672174?v=4', alt: "text", class: "profile-pic" %>
               </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-8">
               <div class="d-flex align-items-center justify-content-center mt-2">
                 <h1>Hello! I'm a <span class="red-text">{</span>full-stack<span class="red-text">}</span> developer...</h1>
               </div>
@@ -42,6 +43,6 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6 d-flex align-items-center justify-content-center h-100"></div>
+    <div class="col-6 d-flex align-items-center justify-content-center h-100"></div>
   </div>
 </div>
