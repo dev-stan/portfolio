@@ -19,6 +19,13 @@
     color: rgb(131, 130, 132);
     font-size: 16px;
   }
+
+  transition: all 1s ease;
+
+  &:hover {
+    background-color: #1e1b1e;
+    transform: scale(1.005);
+  }
 }
 
 .card-pic {
