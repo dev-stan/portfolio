@@ -14,33 +14,7 @@
 <div class="content">
   <div class="row w-100 h-100">
     <div class="col-md-6 d-flex align-items-center justify-content-start h-100">
-      <div class="cta-box">
-        <div class="d-flex">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="d-flex align-items-end justify-content-end">
-                <%= image_tag 'https://avatars.githubusercontent.com/u/133672174?v=4', alt: "text", class: "profile-pic" %>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="d-flex align-items-center justify-content-center mt-2">
-                <h1>Hello! I'm a <span class="red-text">{</span>full-stack<span class="red-text">}</span> developer...</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="mt-3">
-          Hi, I'm stan! I make web apps with Ruby, Python, JavaScript, CSS,
-          and HTML. My solid foundation in Ruby on Rails lets me create seamless,
-          user-friendly web applications from front to back. My goal is to build
-          responsive and interactive solutions that meet clients' needs and exceed
-          their expectations.
-        </p>
-        <div class="mt-4 d-flex gap-3">
-          <%= link_to 'resume 🚀', '#', class: "res-button"  %>
-          <%= link_to 'projects 🕹️', projects_path, class: "res-button"  %>
-        </div>
-      </div>
+      <%= render 'cta_card' %>
     </div>
     <div class="col-md-6 d-flex align-items-center justify-content-center h-100"></div>
   </div>
