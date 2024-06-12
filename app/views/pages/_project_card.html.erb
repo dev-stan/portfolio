@@ -1,15 +1,22 @@
+<% rails = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHNPGas_lBrsMsA1DsG5H5INT-qftbsDSy3g&s' %>
+<% js = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png' %>
+<% html = 'https://cdn-icons-png.flaticon.com/512/732/732212.png' %>
+<% css = 'https://cdn4.iconfinder.com/data/icons/iconsimple-programming/512/css-512.png' %>
 <div class="row project-card mb-5 w-80">
   <div class="col-4 p-3 d-flex align-items-center justify-content-center">
     <%= image_tag img_link, alt: "Project Image", class: "card-pic" %>
   </div>
   <div class="col-8 p-3">
-    <p class="proj-head m-0">shortify</p>
+    <%= link_to 'google.com', class: 'proj-head m-0 text-decoration-none' do %>
+      <%= project_title %>
+      <%= content_tag(:i, '', class: 'fa-brands fa-github') %>
+    <% end %>
     <p class="proj-p"><%= project_text %></p>
     <div class="d-flex gap-2 justify-content-end">
-      <%= image_tag img_link, alt: "Project Image", class: "stack-pic" %>
-      <%= image_tag img_link, alt: "Project Image", class: "stack-pic" %>
-      <%= image_tag img_link, alt: "Project Image", class: "stack-pic" %>
-      <%= image_tag img_link, alt: "Project Image", class: "stack-pic" %>
+      <%= image_tag rails, alt: "Project Image", class: "stack-pic" %>
+      <%= image_tag js, alt: "Project Image", class: "stack-pic" %>
+      <%= image_tag html, alt: "Project Image", class: "stack-pic" %>
+      <%= image_tag css, alt: "Project Image", class: "stack-pic" %>
     </div>
   </div>
 </div>
