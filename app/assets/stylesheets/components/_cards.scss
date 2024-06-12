@@ -3,12 +3,18 @@
   background-color: #272427;
   border-radius: 24px;
   box-shadow: 0 0 50px 1px #000000;
+  transition: all 1s ease;
+
+  &:hover {
+    background-color: #1e1b1e;
+    transform: scale(1.005);
+  }
 
   .proj-head {
     font-weight: 700;
     color: white;
     font-size: 24px;
-    transition: all 1s ease;
+    transition: color 1s ease;
 
     &:hover {
       color: #FF3F81;
@@ -19,21 +25,14 @@
     color: rgb(131, 130, 132);
     font-size: 16px;
   }
-
-  transition: all 1s ease;
-
-  &:hover {
-    background-color: #1e1b1e;
-    transform: scale(1.005);
-  }
 }
 
 .card-pic {
   width: 100%;
   height: auto;
   border-radius: 18px;
-  object-fit: cover; /* Ensure the image covers the parent while maintaining aspect ratio */
-  aspect-ratio: 1 / 1; /* Make sure the image is always square */
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 .stack-pic {
@@ -42,14 +41,17 @@
   height: 30px;
 }
 
+/* Responsive Styling */
 
-/* In your application.css or a custom stylesheet */
 .custom-card-width {
   flex: 0 0 30%;
   max-width: 30%;
 }
 
 @media (max-width: 768px) {
+  .project-card {
+    margin: 0 20px;
+  }
   .custom-card-width {
     flex: 0 0 45%;
     max-width: 45%;
@@ -60,5 +62,21 @@
   .custom-card-width {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .project-card {
+    margin: 0 30px 20px 30px;
+    height: 150px;
+    border-radius: 16px;
+  }
+
+  .proj-head {
+    font-size: 20px;
+  }
+
+  .proj-p {
+    font-size: 14px;
   }
 }
