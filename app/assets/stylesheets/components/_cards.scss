@@ -1,13 +1,51 @@
 .project-card {
   height: auto;
-  width: 100%;
   background-color: #272427;
   border-radius: 24px;
   box-shadow: 0 0 50px 1px #000000;
 
-  .card-pic {
-  width: 50%;
+  .proj-head {
+    color: white;
+    font-size: 24px;
+  }
+
+  .proj-p {
+    color: rgb(131, 130, 132);
+    font-size: 16px;
+  }
+}
+
+.card-pic {
+  width: 100%;
   height: auto;
-  border-radius: 24px;
+  border-radius: 18px;
+  object-fit: cover; /* Ensure the image covers the parent while maintaining aspect ratio */
+  aspect-ratio: 1 / 1; /* Make sure the image is always square */
+}
+
+.stack-pic {
+  border-radius: 20%;
+  width: 30px;
+  height: 30px;
+}
+
+
+/* In your application.css or a custom stylesheet */
+.custom-card-width {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+@media (max-width: 768px) {
+  .custom-card-width {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-card-width {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }

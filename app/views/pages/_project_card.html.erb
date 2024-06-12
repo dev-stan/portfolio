@@ -1,6 +1,15 @@
-<div class="project-card d-flex align-items-center justify-content-center">
-  <%= image_tag 'https://avatars.githubusercontent.com/u/133672174?v=4', alt: "text", class: "card-pic" %>
-  <div class="text p-5 align-items-center justify-content-center">
-    <p>Hello world hello world Hello world hello world Hello world hello world Hello world hello world Hello world hello world Hello world hello world</p>
+<div class="row project-card mb-5 w-80">
+  <div class="col-4 p-3 d-flex align-items-center justify-content-center">
+    <%= image_tag img_link, alt: "Project Image", class: "card-pic" %>
+  </div>
+  <div class="col-8 p-3">
+    <p class="proj-head m-0">shortify</p>
+    <p class="proj-p"><%= project_text %></p>
+    <div class="d-flex gap-2 justify-content-end">
+      <%= image_tag img_link, alt: "Project Image", class: "stack-pic" %>
+      <%= image_tag img_link, alt: "Project Image", class: "stack-pic" %>
+      <%= image_tag img_link, alt: "Project Image", class: "stack-pic" %>
+      <%= image_tag img_link, alt: "Project Image", class: "stack-pic" %>
+    </div>
   </div>
 </div>
