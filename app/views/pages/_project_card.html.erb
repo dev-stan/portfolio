@@ -12,9 +12,14 @@
     <%= image_tag img_link, alt: "Project Image", class: "card-pic" %>
   </div>
   <div class="col-8 p-3">
+    <%= link_to project_title, '#',  class: 'proj-head-text m-0 text-decoration-none context-menu' %>
     <%= link_to github_link, class: 'proj-head m-0 text-decoration-none' do %>
-      <%= project_title %>
       <%= content_tag(:i, '', class: 'fa-brands fa-github') %>
+    <% end %>
+    <% if !link.empty? %>
+      <%= link_to github_link, class: 'proj-head m-0 text-decoration-none' do %>
+        <%= content_tag(:i, '', class: 'fa-solid fa-up-right-from-square') %>
+      <% end %>
     <% end %>
     <p class="proj-p"><%= project_text %></p>
     <div class="d-flex gap-2 justify-content-end">
