@@ -4,6 +4,9 @@
 <% html_icon = 'https://cdn-icons-png.flaticon.com/512/732/732212.png' %>
 <% css_icon = 'https://cdn4.iconfinder.com/data/icons/iconsimple-programming/512/css-512.png' %>
 <% python_icon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png' %>
+<% xml_icon = 'https://www.psdevwiki.com/vita/images/f/fb/Xml-logo.png' %>
+<% java_icon = 'https://www.shareicon.net/data/512x512/2016/09/23/833700_windows_512x512.png' %>
+<% bash_logo = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/2048px-Bash_Logo_Colored.svg.png' %>
 <div class="row project-card mb-5 w-80">
   <div class="col-4 p-3 d-flex align-items-center justify-content-center">
     <%= image_tag img_link, alt: "Project Image", class: "card-pic" %>
@@ -15,7 +18,7 @@
     <% end %>
     <p class="proj-p"><%= project_text %></p>
     <div class="d-flex gap-2 justify-content-end">
-      <% stack_icons = { 'js' => js_icon, 'ruby' => ruby_icon, 'rails' => rails_icon, 'html' => html_icon, 'css' => css_icon, 'python' => python_icon } %>
+      <% stack_icons = { 'js' => js_icon, 'ruby' => ruby_icon, 'rails' => rails_icon, 'html' => html_icon, 'css' => css_icon, 'python' => python_icon, 'xml' => xml_icon, 'java' => java_icon, 'bash' => bash_logo } %>
       <% project_stack.each do |stack| %>
         <% if stack_icons.key?(stack.downcase) %>
           <%= image_tag stack_icons[stack.downcase], alt: "#{stack} Icon", class: "stack-pic" %>
