@@ -67,7 +67,8 @@ p {
   .cta-box {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 80px;
   }
 
   .cta-text {
@@ -77,6 +78,10 @@ p {
   .cta-title {
     justify-content: center;
     text-align: center;
+  }
+
+  #projects {
+    margin-bottom: 30px;
   }
 }
 
