@@ -1,9 +1,28 @@
-<h1>New user</h1>
-
-<%= render "form", user: @user %>
-
-<br>
-
-<div>
-  <%= link_to "Back to users", users_path %>
+<div id="background"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+<script>
+  VANTA.FOG({
+    el: "#background",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0x413744,
+    midtoneColor: 0x4715b0,
+    lowlightColor: 0x0,
+    baseColor: 0xd0b0b,
+    blurFactor: 0.90,
+    speed: 1.20,
+    zoom: 0.20
+  })
+</script>
+<div class="container">
+  <div class="row", style="height: 100vh">
+    <div class="col-6"></div>
+    <div class="col-6 d-flex align-items-center justify-content-center">
+      <%= render "form", user: @user %>
+    </div>
+  </div>
 </div>

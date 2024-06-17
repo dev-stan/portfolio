@@ -1,0 +1,20 @@
+.contact_form {
+  width: 100%;
+  padding: 30px;
+  background: #141314;
+  border-radius: 24px;
+
+  .input {
+    background-color: #262226;
+    border: none; /* Remove the default border */
+    border-radius: 20px;
+    color: white; /* Set text color */
+    padding: 10px; /* Add padding for better appearance */
+    margin-bottom: 10px; /* Optional: Adjust margin for spacing */
+
+    &:focus {
+      outline: none; /* Remove focus outline */
+      /* Optionally, add styles for focused state */
+    }
+  }
+}
