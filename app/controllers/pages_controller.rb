@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @contact
   end
 
   def resume
